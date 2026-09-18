@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    'weather' => [
+        'url' => env('WEATHER_API_URL', 'https://api.openweathermap.org/data/2.5'),
+        'geo_url' => env('WEATHER_GEO_URL', 'https://api.openweathermap.org/geo/1.0'),
+        'key' => env('WEATHER_API_KEY'),
+        'cache_ttl' => (int) env('WEATHER_CACHE_TTL', 600),
+    ],
+
 ];
